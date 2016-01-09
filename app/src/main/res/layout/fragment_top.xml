@@ -1,0 +1,365 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.brendan.CCApp_vp4.TopFragment"
+    style="@style/AppTheme_Nav">
+    <!--android:background="@color/primary"-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Top_Theme">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/content_margin"
+                    android:layout_marginRight="@dimen/content_margin">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textSize="@dimen/abc_text_size_large_material"
+                        android:text="This Week's Events"
+                        android:textStyle="bold"
+                        />
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_border"
+                        android:layout_marginTop="10dp"
+                        android:clickable="true"
+
+                        android:id="@+id/top_frag_event_1"
+                        android:visibility="gone">
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_margin="10dp"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/top_frag_event_1_title"
+                                android:text="EVENT NAME 1"
+                                android:textStyle="bold"
+                                android:layout_alignParentLeft="true"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/top_frag_event_1_with"
+                                android:layout_below="@+id/top_frag_event_1_title"
+                                android:layout_alignLeft="@+id/top_frag_event_1_title"
+
+                                android:text="WITH: Adrian Agguire"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/top_frag_event_1_date"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:text="1/19"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/top_frag_event_1_time"
+                                android:layout_below="@+id/top_frag_event_1_date"
+                                android:layout_alignRight="@+id/top_frag_event_1_date"
+                                android:text="7:00pm"/>
+                            <!--<TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/top_frag_event_1_invited"
+                                android:layout_below="@+id/top_frag_event_1_with"
+                                android:layout_alignLeft="@+id/top_frag_event_1_with"
+                                android:text="Invited:"/>-->
+                            <CheckBox
+                                android:clickable="false"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Invited"
+                                android:id="@+id/top_frag_event_1_invited"
+                                android:layout_below="@+id/top_frag_event_1_time"
+                                android:layout_alignRight="@+id/top_frag_event_1_time"
+                            />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/top_frag_event_1_status"
+                                android:layout_below="@+id/top_frag_event_1_with"
+                                android:layout_alignLeft="@+id/top_frag_event_1_with"
+                                android:layout_marginTop="5dp"
+                                android:text="STATUS: Not Replied"
+                             />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_border"
+                        android:layout_marginTop="10dp"
+                        android:clickable="true"
+                        android:onClick="goToTop3"
+                        android:id="@+id/top_frag_event_2"
+                        android:visibility="gone">
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_margin="10dp"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/top_frag_event_2_title"
+                                android:text="EVENT NAME 2"
+                                android:textStyle="bold"
+                                android:layout_alignParentLeft="true"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/top_frag_event_2_with"
+                                android:layout_below="@+id/top_frag_event_2_title"
+                                android:layout_alignLeft="@+id/top_frag_event_2_title"
+
+                                android:text="WITH: Adrian Agguire"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/top_frag_event_2_date"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:text="1/19"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/top_frag_event_2_time"
+                                android:layout_below="@+id/top_frag_event_2_date"
+                                android:layout_alignRight="@+id/top_frag_event_2_date"
+                                android:text="7:00pm"/>
+                            <!--<TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/top_frag_event_1_invited"
+                                android:layout_below="@+id/top_frag_event_1_with"
+                                android:layout_alignLeft="@+id/top_frag_event_1_with"
+                                android:text="Invited:"/>-->
+                            <CheckBox
+                                android:clickable="false"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Invited"
+                                android:id="@+id/top_frag_event_2_invited"
+                                android:layout_below="@+id/top_frag_event_2_time"
+                                android:layout_alignRight="@+id/top_frag_event_2_time"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/top_frag_event_2_status"
+                                android:layout_below="@+id/top_frag_event_2_with"
+                                android:layout_alignLeft="@+id/top_frag_event_2_with"
+                                android:layout_marginTop="5dp"
+                                android:text="STATUS: Not Replied"
+                                />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <!--******************************************************-->
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_border"
+                        android:layout_marginTop="10dp"
+                        android:clickable="true"
+                        android:onClick="goToTop3"
+                        android:id="@+id/top_frag_event_3"
+                        android:visibility="gone">
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_margin="10dp"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/top_frag_event_3_title"
+                                android:text="EVENT NAME 3"
+                                android:textStyle="bold"
+                                android:layout_alignParentLeft="true"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/top_frag_event_3_with"
+                                android:layout_below="@+id/top_frag_event_3_title"
+                                android:layout_alignLeft="@+id/top_frag_event_3_title"
+
+                                android:text="WITH: Adrian Agguire"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/top_frag_event_3_date"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:text="1/19"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/top_frag_event_3_time"
+                                android:layout_below="@+id/top_frag_event_3_date"
+                                android:layout_alignRight="@+id/top_frag_event_3_date"
+                                android:text="7:00pm"/>
+                            <!--<TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/top_frag_event_1_invited"
+                                android:layout_below="@+id/top_frag_event_1_with"
+                                android:layout_alignLeft="@+id/top_frag_event_1_with"
+                                android:text="Invited:"/>-->
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:clickable="false"
+                                android:text="Invited"
+                                android:id="@+id/top_frag_event_3_invited"
+                                android:layout_below="@+id/top_frag_event_3_time"
+                                android:layout_alignRight="@+id/top_frag_event_3_time"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/top_frag_event_3_status"
+                                android:layout_below="@+id/top_frag_event_3_with"
+                                android:layout_alignLeft="@+id/top_frag_event_3_with"
+                                android:layout_marginTop="5dp"
+                                android:text="STATUS: Not Replied"
+                                />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/btn_C_events"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/but_left_padding"
+                        android:paddingRight="@dimen/but_right_padding"
+                        android:paddingTop="@dimen/but_top_padding"
+                        android:paddingBottom="@dimen/but_bottom_padding"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginBottom="24dp"
+                        android:background="@color/but_red_dark"
+                        android:gravity="center"
+
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:text="Catholic Center Events Today"/>
+
+                    <!--<android.support.v7.widget.AppCompatButton
+                        android:id="@+id/btn_C_events"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginBottom="24dp"
+                        android:padding="12dp"
+                        android:background="@color/but_red_dark"
+                        android:text="Catholic Center Events Today"/>-->
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="@dimen/abc_text_size_large_material"
+                        android:text="Friends"
+                        android:textStyle="bold"
+                        />
+                    <!--Buttons to see friends status -->
+                    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btn_top_friend_progress"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.40"
+                            android:paddingLeft="@dimen/but_left_padding"
+                            android:paddingRight="@dimen/but_right_padding"
+                            android:paddingTop="@dimen/but_top_padding"
+                            android:paddingBottom="@dimen/but_bottom_padding"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_marginLeft="6dp"
+                            android:background="@color/but_blue_dark"
+                            android:gravity="center"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:text="See Friends Progress"/>
+
+
+                        <Button
+                            android:id="@+id/btn_top_friend_request"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.40"
+                            android:paddingLeft="@dimen/but_left_padding"
+                            android:paddingRight="@dimen/but_right_padding"
+                            android:paddingTop="@dimen/but_top_padding"
+                            android:paddingBottom="@dimen/but_bottom_padding"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_marginLeft="6dp"
+                            android:background="@color/but_blue_dark"
+                            android:gravity="center"
+
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:text="See Friend Requests"/>
+
+
+                        </LinearLayout>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="@dimen/abc_text_size_large_material"
+                    android:text="Quote Of The Day"
+                    android:textStyle="bold"
+                    />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="This is a long sample quote from Brendan - Brendan 1/6/15"
+
+                />
+
+                </LinearLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>
+

@@ -1,0 +1,536 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.brendan.CCApp_vp4.Top3Fragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Top_Theme">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/content_margin"
+            android:layout_marginRight="@dimen/content_margin">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="@dimen/abc_text_size_large_material"
+                android:text="Your Events"
+                android:textStyle="bold"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/top3_event_1"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_border"
+                    android:layout_marginTop="10dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_margin="10dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/top3_event_1_title"
+                            android:text="EVENT NAME 1"
+                            android:textStyle="bold"
+                            android:layout_alignParentLeft="true"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/top3_event_1_with"
+                            android:layout_below="@+id/top3_event_1_title"
+                            android:layout_alignLeft="@+id/top3_event_1_title"
+
+                            android:text="WITH: Adrian Agguire"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/top3_event_1_date"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:text="1/19"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/top3_event_1_time"
+                            android:layout_below="@+id/top3_event_1_date"
+                            android:layout_alignRight="@+id/top3_event_1_date"
+                            android:text="7:00pm"/>
+                        <!--<TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/top3_event_1_invited"
+                            android:layout_below="@+id/top3_event_1_with"
+                            android:layout_alignLeft="@+id/top3_event_1_with"
+                            android:text="Invited:"/>-->
+                        <CheckBox
+                            
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Invited"
+                            android:id="@+id/top3_event_1_invited"
+                            android:layout_below="@+id/top3_event_1_time"
+                            android:layout_alignRight="@+id/top3_event_1_time"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/top3_event_1_status"
+                            android:layout_below="@+id/top3_event_1_with"
+                            android:layout_alignLeft="@+id/top3_event_1_with"
+                            android:layout_marginTop="@dimen/status_top_margin"
+                            android:text="STATUS: "
+                            />
+                        <Spinner
+                            android:backgroundTint="@color/spinner_tint"
+                            android:popupBackground="@color/spinner_tint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/top3_event_1_status"
+                            android:layout_alignBottom="@+id/top3_event_1_status"
+                            android:id="@+id/top3_event_1_status_spinner"
+                            android:entries="@array/responseOptions">
+
+                         </Spinner>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/btn_extra_small_height"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/top3_event_1_status"
+                            android:layout_alignLeft="@+id/top3_event_1_status"
+                            >
+                            <Button
+                                android:id="@+id/btn_top3_contact_1"
+                                android:layout_width="0dip"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="0.40"
+                                android:paddingLeft="@dimen/but_left_padding"
+                                android:paddingRight="@dimen/but_right_padding"
+                                android:paddingTop="@dimen/but_top_padding"
+                                android:paddingBottom="@dimen/but_bottom_padding"
+                                android:layout_marginTop="0dp"
+                                android:layout_marginBottom="15dp"
+                                android:layout_marginRight="@dimen/btn_LR_margin"
+                                android:layout_marginLeft="@dimen/btn_LR_margin"
+                                android:background="@color/but_blue_dark"
+                                android:gravity="center"
+                                android:textSize="14sp"
+                                android:textStyle="normal"
+                                android:text="CONTACT"/>
+
+
+                            <Button
+                                android:id="@+id/btn_top3_common_friends_1"
+                                android:layout_width="0dip"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="0.40"
+                                android:paddingLeft="@dimen/but_left_padding"
+                                android:paddingRight="@dimen/but_right_padding"
+                                android:paddingTop="@dimen/but_top_padding"
+                                android:paddingBottom="@dimen/but_bottom_padding"
+                                android:layout_marginTop="0dp"
+                                android:layout_marginBottom="15dp"
+                                android:layout_marginRight="@dimen/btn_LR_margin"
+                                android:layout_marginLeft="@dimen/btn_LR_margin"
+                                android:background="@color/but_blue_dark"
+                                android:gravity="center"
+
+                                android:textSize="14sp"
+                                android:textStyle="normal"
+                                android:text="SEE COMMON FRIENDS"/>
+
+                            </LinearLayout>
+                        
+                        <!--Buttons for contacting or see common Friends-->
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btn_remove_event_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/but_small_height"
+                    android:paddingLeft="@dimen/but_left_padding"
+                    android:paddingRight="@dimen/but_right_padding"
+                    android:paddingTop="@dimen/but_top_padding"
+                    android:paddingBottom="@dimen/but_bottom_padding"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="24dp"
+                    android:background="@color/but_red_dark"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/button_LR_margin"
+                    android:layout_marginRight="@dimen/button_LR_margin"
+
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="REMOVE EVENT"/>
+
+            </LinearLayout>
+            <!-- Event 2 **********************************************************-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/top3_event_2"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_border"
+                    android:layout_marginTop="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_margin="10dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/top3_event_2_title"
+                            android:text="EVENT NAME 2"
+                            android:textStyle="bold"
+                            android:layout_alignParentLeft="true"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/top3_event_2_with"
+                            android:layout_below="@+id/top3_event_2_title"
+                            android:layout_alignLeft="@+id/top3_event_2_title"
+
+                            android:text="WITH: Adrian Agguire"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/top3_event_2_date"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:text="1/19"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/top3_event_2_time"
+                            android:layout_below="@+id/top3_event_2_date"
+                            android:layout_alignRight="@+id/top3_event_2_date"
+                            android:text="7:00pm"/>
+                        <!--<TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/top3_event_1_invited"
+                            android:layout_below="@+id/top3_event_1_with"
+                            android:layout_alignLeft="@+id/top3_event_1_with"
+                            android:text="Invited:"/>-->
+                        <CheckBox
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Invited"
+                            android:id="@+id/top3_event_2_invited"
+                            android:layout_below="@+id/top3_event_2_time"
+                            android:layout_alignRight="@+id/top3_event_2_time"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/top3_event_2_status"
+                            android:layout_below="@+id/top3_event_2_with"
+                            android:layout_alignLeft="@+id/top3_event_2_with"
+                            android:layout_marginTop="@dimen/status_top_margin"
+                            android:text="STATUS: "
+                            />
+                        <Spinner
+                            android:backgroundTint="@color/spinner_tint"
+                            android:popupBackground="@color/spinner_tint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/top3_event_2_status"
+                            android:layout_alignBottom="@+id/top3_event_2_status"
+                            android:id="@+id/top3_event_2_status_spinner"
+                            android:entries="@array/responseOptions">
+
+                        </Spinner>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/btn_extra_small_height"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/top3_event_2_status"
+                            android:layout_alignLeft="@+id/top3_event_2_status"
+                            >
+                            <Button
+                                android:id="@+id/btn_top3_contact_2"
+                                android:layout_width="0dip"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="0.40"
+                                android:paddingLeft="@dimen/but_left_padding"
+                                android:paddingRight="@dimen/but_right_padding"
+                                android:paddingTop="@dimen/but_top_padding"
+                                android:paddingBottom="@dimen/but_bottom_padding"
+                                android:layout_marginTop="0dp"
+                                android:layout_marginBottom="15dp"
+                                android:layout_marginRight="@dimen/btn_LR_margin"
+                                android:layout_marginLeft="@dimen/btn_LR_margin"
+                                android:background="@color/but_blue_dark"
+                                android:gravity="center"
+                                android:textSize="14sp"
+                                android:textStyle="normal"
+                                android:text="CONTACT"/>
+
+
+                            <Button
+                                android:id="@+id/btn_top3_common_friends_2"
+                                android:layout_width="0dip"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="0.40"
+                                android:paddingLeft="@dimen/but_left_padding"
+                                android:paddingRight="@dimen/but_right_padding"
+                                android:paddingTop="@dimen/but_top_padding"
+                                android:paddingBottom="@dimen/but_bottom_padding"
+                                android:layout_marginTop="0dp"
+                                android:layout_marginBottom="15dp"
+                                android:layout_marginRight="@dimen/btn_LR_margin"
+                                android:layout_marginLeft="@dimen/btn_LR_margin"
+                                android:background="@color/but_blue_dark"
+                                android:gravity="center"
+
+                                android:textSize="14sp"
+                                android:textStyle="normal"
+                                android:text="SEE COMMON FRIENDS"/>
+
+                        </LinearLayout>
+
+                        <!--Buttons for contacting or see common Friends-->
+                    </RelativeLayout>
+                </RelativeLayout>
+                <Button
+                    android:id="@+id/btn_remove_event_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/but_small_height"
+                    android:paddingLeft="@dimen/but_left_padding"
+                    android:paddingRight="@dimen/but_right_padding"
+                    android:paddingTop="@dimen/but_top_padding"
+                    android:paddingBottom="@dimen/but_bottom_padding"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginLeft="@dimen/button_LR_margin"
+                    android:layout_marginRight="@dimen/button_LR_margin"
+                    android:background="@color/but_red_dark"
+                    android:gravity="center"
+
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="REMOVE EVENT"/>
+            </LinearLayout>
+            <!--******************************************************-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/top3_event_3"
+                android:visibility="gone">
+
+                <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_border"
+                android:layout_marginTop="10dp">
+
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/top3_event_3_title"
+                            android:text="EVENT NAME 3"
+                            android:textStyle="bold"
+                            android:layout_alignParentLeft="true"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/top3_event_3_with"
+                            android:layout_below="@+id/top3_event_3_title"
+                            android:layout_alignLeft="@+id/top3_event_3_title"
+
+                            android:text="WITH: Adrian Agguire"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/top3_event_3_date"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:text="1/19"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/top3_event_3_time"
+                            android:layout_below="@+id/top3_event_3_date"
+                            android:layout_alignRight="@+id/top3_event_3_date"
+                            android:text="7:00pm"/>
+                        <!--<TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/top3_event_1_invited"
+                            android:layout_below="@+id/top3_event_1_with"
+                            android:layout_alignLeft="@+id/top3_event_1_with"
+                            android:text="Invited:"/>-->
+                        <CheckBox
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Invited"
+                            android:id="@+id/top3_event_3_invited"
+                            android:layout_below="@+id/top3_event_3_time"
+                            android:layout_alignRight="@+id/top3_event_3_time"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/top3_event_3_status"
+                            android:layout_below="@+id/top3_event_3_with"
+                            android:layout_alignLeft="@+id/top3_event_3_with"
+                            android:layout_marginTop="@dimen/status_top_margin"
+                            android:text="STATUS: "
+                            />
+                        <Spinner
+                            android:backgroundTint="@color/spinner_tint"
+                            android:popupBackground="@color/spinner_tint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/top3_event_3_status"
+                            android:layout_alignBottom="@+id/top3_event_3_status"
+                            android:id="@+id/top3_event_3_status_spinner"
+                            android:entries="@array/responseOptions">
+
+                        </Spinner>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/btn_extra_small_height"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/top3_event_3_status"
+                            android:layout_alignLeft="@+id/top3_event_3_status"
+                            >
+                            <Button
+                                android:id="@+id/btn_top3_contact_3"
+                                android:layout_width="0dip"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="0.40"
+                                android:paddingLeft="@dimen/but_left_padding"
+                                android:paddingRight="@dimen/but_right_padding"
+                                android:paddingTop="@dimen/but_top_padding"
+                                android:paddingBottom="@dimen/but_bottom_padding"
+                                android:layout_marginTop="0dp"
+                                android:layout_marginBottom="15dp"
+                                android:layout_marginRight="@dimen/btn_LR_margin"
+                                android:layout_marginLeft="@dimen/btn_LR_margin"
+                                android:background="@color/but_blue_dark"
+                                android:gravity="center"
+                                android:textSize="14sp"
+                                android:textStyle="normal"
+                                android:text="CONTACT"/>
+
+
+                            <Button
+                                android:id="@+id/btn_top3_common_friends_3"
+                                android:layout_width="0dip"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="0.40"
+                                android:paddingLeft="@dimen/but_left_padding"
+                                android:paddingRight="@dimen/but_right_padding"
+                                android:paddingTop="@dimen/but_top_padding"
+                                android:paddingBottom="@dimen/but_bottom_padding"
+                                android:layout_marginTop="0dp"
+                                android:layout_marginBottom="15dp"
+                                android:layout_marginRight="@dimen/btn_LR_margin"
+                                android:layout_marginLeft="@dimen/btn_LR_margin"
+                                android:background="@color/but_blue_dark"
+                                android:gravity="center"
+
+                                android:textSize="14sp"
+                                android:textStyle="normal"
+                                android:text="SEE COMMON FRIENDS"/>
+
+                        </LinearLayout>
+
+                        <!--Buttons for contacting or see common Friends-->
+
+                     </RelativeLayout>
+                </RelativeLayout>
+                <Button
+                    android:id="@+id/btn_remove_event_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/but_small_height"
+                    android:paddingLeft="@dimen/but_left_padding"
+                    android:paddingRight="@dimen/but_right_padding"
+                    android:paddingTop="@dimen/but_top_padding"
+                    android:paddingBottom="@dimen/but_bottom_padding"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginLeft="@dimen/button_LR_margin"
+                    android:layout_marginRight="@dimen/button_LR_margin"
+                    android:background="@color/but_red_dark"
+                    android:gravity="center"
+
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="REMOVE EVENT"/>
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_top3_add_event"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/but_small_height"
+                android:paddingLeft="@dimen/but_left_padding"
+                android:paddingRight="@dimen/but_right_padding"
+                android:paddingTop="@dimen/but_top_padding"
+                android:paddingBottom="@dimen/but_bottom_padding"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="24dp"
+                android:background="@color/but_green_dark"
+                android:gravity="center"
+
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:text="ADD EVENT"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

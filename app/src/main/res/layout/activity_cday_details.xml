@@ -1,0 +1,978 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.brendan.CCApp_vp4.CDayDetails"
+    style="@style/AppTheme_Nav"
+    android:background="@color/primary">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/abc_text_size_large_material"
+            android:text="Monday Events"
+            android:textStyle="bold"
+            />
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_border"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:visibility="gone"
+            android:id="@+id/C_day_detail_event_1"
+
+            >
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/C_day_detail_event_1_title"
+                    android:text="OFFICIAL EVENT NAME"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/C_day_detail_event_1_description"
+
+                    android:text="Service Event: This is for the halloween drive that we are having"/>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/C_day_detail_event_1_location_header"
+                        android:textStyle="bold"
+                        android:text="Where:"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/C_day_detail_event_1_location"
+                        android:text="Catholic Center"/>
+                </LinearLayout>
+                <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/C_day_detail_event_1_date_header"
+                        android:textStyle="bold"
+                        android:text="Date: "/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/C_day_detail_event_1_date"
+
+                        android:text="1/6"/>
+                </LinearLayout>
+                <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/C_day_detail_event_1_time_header"
+                        android:textStyle="bold"
+
+                        android:text="Time: "/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/C_day_detail_event_1_time"
+
+                        android:text="7:00pm"/>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_alignParentLeft="true">
+                        <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/C_day_detail_event_1_contact_header"
+                        android:textStyle="bold"
+
+                        android:text="Contact: "/>
+                        <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/C_day_detail_event_1_contact"
+                        android:layout_alignParentLeft="true"
+
+                        android:text="Brendan Celii"/>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btn_c_day_event_contact_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/but_small_height_2"
+                        android:paddingLeft="@dimen/but_left_padding"
+                        android:paddingRight="@dimen/but_right_padding"
+                        android:paddingTop="@dimen/but_top_padding"
+                        android:paddingBottom="@dimen/but_bottom_padding"
+                        android:background="@color/but_blue_dark"
+                        android:gravity="center"
+                        android:layout_alignParentRight="true"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        android:text="CONTACT"/>
+
+
+
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <!--Event 2************************************************************************-->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_border"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:visibility="gone"
+            android:id="@+id/C_day_detail_event_2"
+
+            >
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/C_day_detail_event_2_title"
+                    android:text="OFFICIAL EVENT NAME"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/C_day_detail_event_2_description"
+
+                    android:text="Service Event: This is for the halloween drive that we are having"/>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/C_day_detail_event_2_location_header"
+                        android:textStyle="bold"
+                        android:text="Where:"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/C_day_detail_event_2_location"
+                        android:text="Catholic Center"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/C_day_detail_event_2_date_header"
+                        android:textStyle="bold"
+                        android:text="Date: "/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/C_day_detail_event_2_date"
+
+                        android:text="1/6"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/C_day_detail_event_2_time_header"
+                        android:textStyle="bold"
+
+                        android:text="Time: "/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/C_day_detail_event_2_time"
+
+                        android:text="7:00pm"/>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_alignParentLeft="true">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/C_day_detail_event_2_contact_header"
+                            android:textStyle="bold"
+
+                            android:text="Contact: "/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/C_day_detail_event_2_contact"
+                            android:layout_alignParentLeft="true"
+
+                            android:text="Brendan Celii"/>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btn_c_day_event_contact_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/but_small_height_2"
+                        android:paddingLeft="@dimen/but_left_padding"
+                        android:paddingRight="@dimen/but_right_padding"
+                        android:paddingTop="@dimen/but_top_padding"
+                        android:paddingBottom="@dimen/but_bottom_padding"
+                        android:background="@color/but_blue_dark"
+                        android:gravity="center"
+                        android:layout_alignParentRight="true"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        android:text="CONTACT"/>
+
+
+
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <!--Event 3************************************************************************-->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_border"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:visibility="gone"
+            android:id="@+id/C_day_detail_event_3"
+
+            >
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/C_day_detail_event_3_title"
+                    android:text="OFFICIAL EVENT NAME"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/C_day_detail_event_3_description"
+
+                    android:text="Service Event: This is for the halloween drive that we are having"/>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/C_day_detail_event_3_location_header"
+                        android:textStyle="bold"
+                        android:text="Where:"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/C_day_detail_event_3_location"
+                        android:text="Catholic Center"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/C_day_detail_event_3_date_header"
+                        android:textStyle="bold"
+                        android:text="Date: "/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/C_day_detail_event_3_date"
+
+                        android:text="1/6"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/C_day_detail_event_3_time_header"
+                        android:textStyle="bold"
+
+                        android:text="Time: "/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/C_day_detail_event_3_time"
+
+                        android:text="7:00pm"/>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_alignParentLeft="true">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/C_day_detail_event_3_contact_header"
+                            android:textStyle="bold"
+
+                            android:text="Contact: "/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/C_day_detail_event_3_contact"
+                            android:layout_alignParentLeft="true"
+
+                            android:text="Brendan Celii"/>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btn_c_day_event_contact_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/but_small_height_2"
+                        android:paddingLeft="@dimen/but_left_padding"
+                        android:paddingRight="@dimen/but_right_padding"
+                        android:paddingTop="@dimen/but_top_padding"
+                        android:paddingBottom="@dimen/but_bottom_padding"
+                        android:background="@color/but_blue_dark"
+                        android:gravity="center"
+                        android:layout_alignParentRight="true"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        android:text="CONTACT"/>
+
+
+
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <!--Event 4************************************************************************-->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_border"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:visibility="gone"
+            android:id="@+id/C_day_detail_event_4"
+
+            >
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/C_day_detail_event_4_title"
+                    android:text="OFFICIAL EVENT NAME"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/C_day_detail_event_4_description"
+
+                    android:text="Service Event: This is for the halloween drive that we are having"/>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/C_day_detail_event_4_location_header"
+                        android:textStyle="bold"
+                        android:text="Where:"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/C_day_detail_event_4_location"
+                        android:text="Catholic Center"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/C_day_detail_event_4_date_header"
+                        android:textStyle="bold"
+                        android:text="Date: "/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/C_day_detail_event_4_date"
+
+                        android:text="1/6"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/C_day_detail_event_4_time_header"
+                        android:textStyle="bold"
+
+                        android:text="Time: "/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/C_day_detail_event_4_time"
+
+                        android:text="7:00pm"/>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_alignParentLeft="true">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/C_day_detail_event_4_contact_header"
+                            android:textStyle="bold"
+
+                            android:text="Contact: "/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/C_day_detail_event_4_contact"
+                            android:layout_alignParentLeft="true"
+
+                            android:text="Brendan Celii"/>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btn_c_day_event_contact_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/but_small_height_2"
+                        android:paddingLeft="@dimen/but_left_padding"
+                        android:paddingRight="@dimen/but_right_padding"
+                        android:paddingTop="@dimen/but_top_padding"
+                        android:paddingBottom="@dimen/but_bottom_padding"
+                        android:background="@color/but_blue_dark"
+                        android:gravity="center"
+                        android:layout_alignParentRight="true"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        android:text="CONTACT"/>
+
+
+
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <!--Event 5************************************************************************-->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_border"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:visibility="gone"
+            android:id="@+id/C_day_detail_event_5"
+
+            >
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/C_day_detail_event_5_title"
+                    android:text="OFFICIAL EVENT NAME"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/C_day_detail_event_5_description"
+
+                    android:text="Service Event: This is for the halloween drive that we are having"/>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/C_day_detail_event_5_location_header"
+                        android:textStyle="bold"
+                        android:text="Where:"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/C_day_detail_event_5_location"
+                        android:text="Catholic Center"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/C_day_detail_event_5_date_header"
+                        android:textStyle="bold"
+                        android:text="Date: "/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/C_day_detail_event_5_date"
+
+                        android:text="1/6"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/C_day_detail_event_5_time_header"
+                        android:textStyle="bold"
+
+                        android:text="Time: "/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/C_day_detail_event_5_time"
+
+                        android:text="7:00pm"/>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_alignParentLeft="true">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/C_day_detail_event_5_contact_header"
+                            android:textStyle="bold"
+
+                            android:text="Contact: "/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/C_day_detail_event_5_contact"
+                            android:layout_alignParentLeft="true"
+
+                            android:text="Brendan Celii"/>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btn_c_day_event_contact_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/but_small_height_2"
+                        android:paddingLeft="@dimen/but_left_padding"
+                        android:paddingRight="@dimen/but_right_padding"
+                        android:paddingTop="@dimen/but_top_padding"
+                        android:paddingBottom="@dimen/but_bottom_padding"
+                        android:background="@color/but_blue_dark"
+                        android:gravity="center"
+                        android:layout_alignParentRight="true"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        android:text="CONTACT"/>
+
+
+
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <!--Event 6************************************************************************-->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_border"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:visibility="gone"
+            android:id="@+id/C_day_detail_event_6"
+
+            >
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/C_day_detail_event_6_title"
+                    android:text="OFFICIAL EVENT NAME"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/C_day_detail_event_6_description"
+
+                    android:text="Service Event: This is for the halloween drive that we are having"/>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/C_day_detail_event_6_location_header"
+                        android:textStyle="bold"
+                        android:text="Where:"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/C_day_detail_event_6_location"
+                        android:text="Catholic Center"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/C_day_detail_event_6_date_header"
+                        android:textStyle="bold"
+                        android:text="Date: "/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/C_day_detail_event_6_date"
+
+                        android:text="1/6"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/C_day_detail_event_6_time_header"
+                        android:textStyle="bold"
+
+                        android:text="Time: "/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/C_day_detail_event_6_time"
+
+                        android:text="7:00pm"/>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_alignParentLeft="true">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/C_day_detail_event_6_contact_header"
+                            android:textStyle="bold"
+
+                            android:text="Contact: "/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/C_day_detail_event_6_contact"
+                            android:layout_alignParentLeft="true"
+
+                            android:text="Brendan Celii"/>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btn_c_day_event_contact_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/but_small_height_2"
+                        android:paddingLeft="@dimen/but_left_padding"
+                        android:paddingRight="@dimen/but_right_padding"
+                        android:paddingTop="@dimen/but_top_padding"
+                        android:paddingBottom="@dimen/but_bottom_padding"
+                        android:background="@color/but_blue_dark"
+                        android:gravity="center"
+                        android:layout_alignParentRight="true"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        android:text="CONTACT"/>
+
+
+
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <!--Event 7************************************************************************-->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_border"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:visibility="gone"
+            android:id="@+id/C_day_detail_event_7"
+
+            >
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/C_day_detail_event_7_title"
+                    android:text="OFFICIAL EVENT NAME"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/C_day_detail_event_7_description"
+
+                    android:text="Service Event: This is for the halloween drive that we are having"/>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/C_day_detail_event_7_location_header"
+                        android:textStyle="bold"
+                        android:text="Where:"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/C_day_detail_event_7_location"
+                        android:text="Catholic Center"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/C_day_detail_event_7_date_header"
+                        android:textStyle="bold"
+                        android:text="Date: "/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/C_day_detail_event_7_date"
+
+                        android:text="1/6"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/C_day_detail_event_7_time_header"
+                        android:textStyle="bold"
+
+                        android:text="Time: "/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/C_day_detail_event_7_time"
+
+                        android:text="7:00pm"/>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_alignParentLeft="true">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/C_day_detail_event_7_contact_header"
+                            android:textStyle="bold"
+
+                            android:text="Contact: "/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/C_day_detail_event_7_contact"
+                            android:layout_alignParentLeft="true"
+
+                            android:text="Brendan Celii"/>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btn_c_day_event_contact_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/but_small_height_2"
+                        android:paddingLeft="@dimen/but_left_padding"
+                        android:paddingRight="@dimen/but_right_padding"
+                        android:paddingTop="@dimen/but_top_padding"
+                        android:paddingBottom="@dimen/but_bottom_padding"
+                        android:background="@color/but_blue_dark"
+                        android:gravity="center"
+                        android:layout_alignParentRight="true"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        android:text="CONTACT"/>
+
+
+
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

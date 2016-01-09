@@ -1,0 +1,63 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.brendan.CCApp_vp4.FriendsFragment">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/content_margin"
+            android:layout_marginRight="@dimen/content_margin">
+
+        <!--<TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/abc_text_size_large_material"
+            android:text="Friends"
+            android:textStyle="bold"
+            />-->
+        <ListView
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/friends_listView">
+
+         </ListView>
+
+        <Button
+            android:id="@+id/btn_add_friends"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/but_left_padding"
+            android:paddingRight="@dimen/but_right_padding"
+            android:paddingTop="@dimen/but_top_padding"
+            android:paddingBottom="@dimen/but_bottom_padding"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/but_green_dark"
+            android:gravity="center"
+
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:text="ADD FRIEND"/>
+        <Button
+            android:id="@+id/btn_view_friend_requests"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/but_left_padding"
+            android:paddingRight="@dimen/but_right_padding"
+            android:paddingTop="@dimen/but_top_padding"
+            android:paddingBottom="@dimen/but_bottom_padding"
+            android:layout_margin="10dp"
+            android:background="@color/but_blue_dark"
+            android:gravity="center"
+
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:text="View Friend Requests"/>
+        </LinearLayout>
+
+
+</FrameLayout>

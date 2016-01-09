@@ -1,0 +1,282 @@
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/Top_Theme"
+    tools:context="com.brendan.CCApp_vp4.FriendRequests">
+
+    <!--Friend Request 1********************************************************-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/FR_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/content_margin"
+            android:layout_marginRight="@dimen/content_margin"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/FR_name_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:textSize="@dimen/abc_text_size_large_material"
+                android:text="Dad Celii"
+                android:textStyle="bold"
+                />
+            <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_accept_1"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.40"
+                    android:paddingLeft="@dimen/but_left_padding"
+                    android:paddingRight="@dimen/but_right_padding"
+                    android:paddingTop="@dimen/but_top_padding"
+                    android:paddingBottom="@dimen/but_bottom_padding"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:background="@color/but_blue_dark"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="ACCEPT"/>
+
+
+                <Button
+                    android:id="@+id/btn_decline_1"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.40"
+                    android:paddingLeft="@dimen/but_left_padding"
+                    android:paddingRight="@dimen/but_right_padding"
+                    android:paddingTop="@dimen/but_top_padding"
+                    android:paddingBottom="@dimen/but_bottom_padding"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:background="@color/but_red_dark"
+                    android:gravity="center"
+
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="DECLINE"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <!--Friend Request 2********************************************************-->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/content_margin"
+            android:layout_marginRight="@dimen/content_margin"
+            android:visibility="gone"
+            android:id="@+id/FR_2">
+
+            <TextView
+                android:id="@+id/FR_name_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:textSize="@dimen/abc_text_size_large_material"
+                android:text="Dad Celii"
+                android:textStyle="bold"
+                />
+            <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_accept_2"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.40"
+                    android:paddingLeft="@dimen/but_left_padding"
+                    android:paddingRight="@dimen/but_right_padding"
+                    android:paddingTop="@dimen/but_top_padding"
+                    android:paddingBottom="@dimen/but_bottom_padding"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:background="@color/but_blue_dark"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="ACCEPT"/>
+
+
+                <Button
+                    android:id="@+id/btn_decline_2"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.40"
+                    android:paddingLeft="@dimen/but_left_padding"
+                    android:paddingRight="@dimen/but_right_padding"
+                    android:paddingTop="@dimen/but_top_padding"
+                    android:paddingBottom="@dimen/but_bottom_padding"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:background="@color/but_red_dark"
+                    android:gravity="center"
+
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="DECLINE"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <!--Friend Request 3********************************************************-->
+         <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/content_margin"
+            android:layout_marginRight="@dimen/content_margin"
+             android:visibility="gone"
+             android:id="@+id/FR_3">
+
+            <TextView
+                android:id="@+id/FR_name_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:textSize="@dimen/abc_text_size_large_material"
+                android:text="Dad Celii"
+                android:textStyle="bold"
+                />
+            <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_accept_3"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.40"
+                    android:paddingLeft="@dimen/but_left_padding"
+                    android:paddingRight="@dimen/but_right_padding"
+                    android:paddingTop="@dimen/but_top_padding"
+                    android:paddingBottom="@dimen/but_bottom_padding"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:background="@color/but_blue_dark"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="ACCEPT"/>
+
+
+                <Button
+                    android:id="@+id/btn_decline_3"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.40"
+                    android:paddingLeft="@dimen/but_left_padding"
+                    android:paddingRight="@dimen/but_right_padding"
+                    android:paddingTop="@dimen/but_top_padding"
+                    android:paddingBottom="@dimen/but_bottom_padding"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:background="@color/but_red_dark"
+                    android:gravity="center"
+
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="DECLINE"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <!--Friend Request 4********************************************************-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/content_margin"
+            android:layout_marginRight="@dimen/content_margin"
+            android:visibility="gone"
+            android:id="@+id/FR_4">
+
+            <TextView
+                android:id="@+id/FR_name_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:textSize="@dimen/abc_text_size_large_material"
+                android:text="Dad Celii"
+                android:textStyle="bold"
+                />
+            <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_accept_4"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.40"
+                    android:paddingLeft="@dimen/but_left_padding"
+                    android:paddingRight="@dimen/but_right_padding"
+                    android:paddingTop="@dimen/but_top_padding"
+                    android:paddingBottom="@dimen/but_bottom_padding"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:background="@color/but_blue_dark"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="ACCEPT"/>
+
+
+                <Button
+                    android:id="@+id/btn_decline_4"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.40"
+                    android:paddingLeft="@dimen/but_left_padding"
+                    android:paddingRight="@dimen/but_right_padding"
+                    android:paddingTop="@dimen/but_top_padding"
+                    android:paddingBottom="@dimen/but_bottom_padding"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:background="@color/but_red_dark"
+                    android:gravity="center"
+
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="DECLINE"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+ </ScrollView>

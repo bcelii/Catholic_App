@@ -1,0 +1,255 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.brendan.CCApp_vp4.FriendTop3"
+    style="@style/Top_Theme">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/content_margin"
+        android:layout_marginRight="@dimen/content_margin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/abc_text_size_large_material"
+            android:id="@+id/friend_top_3_title"
+            android:text="Friends Top 3 List"
+            android:textStyle="bold"
+            />
+        <!--***************************************************-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_border"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:id="@+id/friend_event_1"
+            android:visibility="gone">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/friend_event_1_title"
+                    android:text="EVENT NAME 1"
+                    android:textStyle="bold"
+                    android:layout_alignParentLeft="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/friend_event_1_with"
+                    android:layout_below="@+id/friend_event_1_title"
+                    android:layout_alignLeft="@+id/friend_event_1_title"
+
+                    android:text="WITH: Adrian Agguire"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/friend_event_1_date"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:text="1/19"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/friend_event_1_time"
+                    android:layout_below="@+id/friend_event_1_date"
+                    android:layout_alignRight="@+id/friend_event_1_date"
+                    android:text="7:00pm"/>
+                <!--<TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/friend_event_1_invited"
+                    android:layout_below="@+id/friend_event_1_with"
+                    android:layout_alignLeft="@+id/friend_event_1_with"
+                    android:text="Invited:"/>-->
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Invited"
+                    android:id="@+id/friend_event_1_invited"
+                    android:layout_below="@+id/friend_event_1_time"
+                    android:layout_alignRight="@+id/friend_event_1_time"
+                    android:clickable="false"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/friend_event_1_status"
+                    android:layout_below="@+id/friend_event_1_with"
+                    android:layout_alignLeft="@+id/friend_event_1_with"
+                    android:layout_marginTop="5dp"
+                    android:text="STATUS: Not Replied"
+                    />
+
+            </RelativeLayout>
+        </RelativeLayout>
+        <!--**************************************************************88-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_border"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:id="@+id/friend_event_2"
+            android:visibility="gone">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/friend_event_2_title"
+                    android:text="EVENT NAME 2"
+                    android:textStyle="bold"
+                    android:layout_alignParentLeft="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/friend_event_2_with"
+                    android:layout_below="@+id/friend_event_2_title"
+                    android:layout_alignLeft="@+id/friend_event_2_title"
+
+                    android:text="WITH: Adrian Agguire"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/friend_event_2_date"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:text="1/19"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/friend_event_2_time"
+                    android:layout_below="@+id/friend_event_2_date"
+                    android:layout_alignRight="@+id/friend_event_2_date"
+                    android:text="7:00pm"/>
+                <!--<TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/friend_event_1_invited"
+                    android:layout_below="@+id/friend_event_1_with"
+                    android:layout_alignLeft="@+id/friend_event_1_with"
+                    android:text="Invited:"/>-->
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Invited"
+                    android:id="@+id/friend_event_2_invited"
+                    android:layout_below="@+id/friend_event_2_time"
+                    android:layout_alignRight="@+id/friend_event_2_time"
+                    android:clickable="false"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/friend_event_2_status"
+                    android:layout_below="@+id/friend_event_2_with"
+                    android:layout_alignLeft="@+id/friend_event_2_with"
+                    android:layout_marginTop="5dp"
+                    android:text="STATUS: Not Replied"
+                    />
+
+            </RelativeLayout>
+        </RelativeLayout>
+        <!--******************************************************-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_border"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:id="@+id/friend_event_3"
+            android:visibility="gone">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/friend_event_3_title"
+                    android:text="EVENT NAME 3"
+                    android:textStyle="bold"
+                    android:layout_alignParentLeft="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/friend_event_3_with"
+                    android:layout_below="@+id/friend_event_3_title"
+                    android:layout_alignLeft="@+id/friend_event_3_title"
+
+                    android:text="WITH: Adrian Agguire"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/friend_event_3_date"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:text="1/19"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/friend_event_3_time"
+                    android:layout_below="@+id/friend_event_3_date"
+                    android:layout_alignRight="@+id/friend_event_3_date"
+                    android:text="7:00pm"/>
+                <!--<TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/friend_event_1_invited"
+                    android:layout_below="@+id/friend_event_1_with"
+                    android:layout_alignLeft="@+id/friend_event_1_with"
+                    android:text="Invited:"/>-->
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Invited"
+                    android:id="@+id/friend_event_3_invited"
+                    android:layout_below="@+id/friend_event_3_time"
+                    android:layout_alignRight="@+id/friend_event_3_time"
+                    android:clickable="false"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/friend_event_3_status"
+                    android:layout_below="@+id/friend_event_3_with"
+                    android:layout_alignLeft="@+id/friend_event_3_with"
+                    android:layout_marginTop="5dp"
+                    android:text="STATUS: Not Replied"
+                    />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

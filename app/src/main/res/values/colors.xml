@@ -1,17 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <color name="primary">#E43F3F</color>
-  <color name="primary_dark">#E12929</color>
-  <color name="primary_darker">#CC1D1D</color>
+  <color name="primary">#99C2FF</color>
+  <color name="primary_dark">#0047b3</color>
+  <color name="primary_darker">#001f4d</color>
   <color name="accent">#FFFFFF</color>
 
   <color name="black">#000000</color>
-  <color name="jet">#222222</color>
-  <color name="oil">#333333</color>
-  <color name="monsoon">#777777</color>
-  <color name="jumbo">#888888</color>
-  <color name="aluminum">#999999</color>
-  <color name="base">#AAAAAA</color>
-  <color name="iron">#CCCCCC</color>
+    <!-- <color name="jet">#222222</color>
+    <color name="oil">#333333</color>
+   <color name="monsoon">#777777</color>
+    <color name="jumbo">#888888</color>
+    <color name="aluminum">#999999</color>
+    <color name="base">#AAAAAA</color>
+    <color name="iron">#CCCCCC</color>-->
   <color name="white">#FFFFFF</color>
+
+  <!-- Brendan Added Colors-->
+
+    <!--Color for Buttons-->
+   <color name="but_blue_dark">#001f4d</color>
+   <color name="but_green_dark">#004d00</color>
+   <color name="but_red_dark">#b30000</color>
+
+    <!--for spinners-->
+    <color name="spinner_tint">#0047b3</color>
+
+
+
+
+  <!-- calmm blue-->
+  <color name="loginBackground">#99B3FF</color>
+    <color name="background_gradient_start">#000000</color>
+    <color name="background_gradient_end">#DDDDDD</color>
+    <color name="fastlane_background">#0096a6</color>
+    <color name="search_opaque">#ffaa3f</color>
+    <color name="detail_background">#0096a6</color>
+    <color name="soft_opaque">#30000000</color>
+    <color name="img_soft_opaque">#30FF0000</color>
+    <color name="img_full_opaque">#00000000</color>
+    <color name="black_opaque">#AA000000</color>
+    <color name="orange_transparent">#AAFADCA7</color>
+    <color name="orange">#FADCA7</color>
+    <color name="yellow">#EEFF41</color>
+    <color name="default_background">#3d3d3d</color>
 </resources>

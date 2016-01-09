@@ -1,6 +1,85 @@
 <resources>
-    <string name="app_name">Material Login Example</string>
+    <string name="app_name">CApplic Center</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+
+    <string-array name="SLC_Positions">
+        <item>FYSH Leader</item>
+        <item>FYSH Director</item>
+        <item>Student Campus Minister</item>
+        <item>Service Chair</item>
+        <item>Social Chair </item>
+        <item>Liturgy Chair</item>
+        <item>Communications Chair</item>
+        <item>Senior Slacker Board</item>
+    </string-array>
+
+    <string-array name="years">
+        <item>1st</item>
+        <item>2nd</item>
+        <item>3rd</item>
+        <item>4th</item>
+        <item>Grad</item>
+        <item>Oldy</item>
+    </string-array>
+
+    <!--Code for the top level and the drawer -->
+
+    <string name="action_create_order">Create Order</string>
+    <string name="title_activity_order">Order Activity</string>
+    <string name="action_share">Share</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_top">Top fragment</string>
+    <string-array name="pizzas">
+        <item>Diavolo</item>
+        <item>Funghi</item>
+    </string-array>
+    <string-array name="pasta">
+        <item>Spaghetti Bolognese</item>
+        <item>Lasagne</item>
+    </string-array>
+    <string-array name="stores">
+        <item>Cambridge</item>
+        <item>Sebastopol</item>
+    </string-array>
+
+
+
+    <string-array name="titles">
+        <item>Home</item>
+        <item>Top 3 List</item>
+        <item>Friends</item>
+        <item>C Events</item>
+        <item>Master List</item>
+    </string-array>
+
+    <!--Response Options-->
+    <string-array name="responseOptions">
+        <item>Not Replied</item>
+        <item>Maybe</item>
+        <item>Not Coming</item>
+        <item>Coming</item>
+    </string-array>
+
+    <string name="open_drawer">Open drawer</string>
+    <string name="close_drawer">Close drawer</string>
+    <string name="title_activity_c__events__days">C_Events_Days</string>
+    <string name="title_activity_cday_details">CDayDetails</string>
+    <string name="title_activity_friend_top3">FriendTop3</string>
+    <string name="title_activity_friend_requests">FriendRequests</string>
+    <string name="title_activity_add_friend">AddFriend</string>
+    <string name="title_activity_master_list__add_person">MasterList_AddPerson</string>
+    <string name="title_activity_new_event">NewEvent</string>
+    <string name="title_activity_date__trial">Date_Trial</string>
+
+    <!--for date -->
+    <string name="from_date">Date</string>
+    <string name="to_date">To Date</string>
+
+
+
+
 </resources>
