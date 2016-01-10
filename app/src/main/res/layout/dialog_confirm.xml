@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+
+    >
+<!--android:background="@android:color/transparent"-->
+
+
+<!--<ImageView
+    android:id="@+id/imageDialog"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="6dp" />-->
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/popup_window_LR_margin"
+    android:layout_marginLeft="@dimen/popup_window_LR_margin"
+    android:background="@drawable/dialog_background"
+    android:orientation="vertical">
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/dialog_confirm_textDialog"
+        android:text="Do you want to send freined request to Collete?"
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/popup_title_size"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_extra_small_height"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+
+        >
+        <Button
+            android:id="@+id/dialog_confirm_yes"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.40"
+            android:paddingLeft="@dimen/but_left_padding"
+            android:paddingRight="@dimen/but_right_padding"
+            android:paddingTop="@dimen/but_top_padding"
+            android:paddingBottom="@dimen/but_bottom_padding"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="@dimen/btn_LR_margin"
+            android:layout_marginLeft="@dimen/btn_LR_margin"
+            android:background="@color/but_green_dark"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:textColor="@color/text_color_normal"
+            android:text="YES"/>
+
+
+        <Button
+            android:id="@+id/dialog_confirm_cancel"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.40"
+            android:paddingLeft="@dimen/but_left_padding"
+            android:paddingRight="@dimen/but_right_padding"
+            android:paddingTop="@dimen/but_top_padding"
+            android:paddingBottom="@dimen/but_bottom_padding"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="@dimen/btn_LR_margin"
+            android:layout_marginLeft="@dimen/btn_LR_margin"
+            android:background="@color/but_red_dark"
+            android:gravity="center"
+
+            android:textColor="@color/text_color_normal"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:text="CANCEL"/>
+
+    </LinearLayout>
+
+        />
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/but_red_dark"
+        android:text="Cancel"
+        android:layout_gravity="right"
+        android:clickable="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/declineButton"/>-->
+
+
+</LinearLayout>
+
+
+</LinearLayout>

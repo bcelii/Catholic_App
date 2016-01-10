@@ -19,4 +19,24 @@
     <dimen name="btn_LR_margin">15dp</dimen>
     <dimen name="status_top_margin">10dp</dimen>
 
+    <!--for new event sheet -->
+    <dimen name="new_event_text_size">20sp</dimen>
+    <dimen name="new_event_text_size_dp">20dp</dimen>
+    <dimen name="new_event_text_size_small">17sp</dimen>
+    <dimen name="new_event_text_size_small_dp">17dp</dimen>
+    <dimen name="new_event_title_size">22sp</dimen>
+    <dimen name="new_event_title_size_dp">22dp</dimen>
+    <dimen name="new_event_scroll_text_size">20sp</dimen>
+    <dimen name="new_event_scroll_text_size_dp">20dp</dimen>
+
+    <!--for pop up message-->
+    <dimen name="popup_button_LR_margin">40dp</dimen>
+    <dimen name="popup_window_LR_margin">40dp</dimen>
+    <dimen name="popup_window_bottom_margin">10dp</dimen>
+    <dimen name="popup_Round">10dp</dimen>
+    <dimen name="popup_title_size">20sp</dimen>
+    <dimen name="popup_button_height">30dp</dimen>
+
+
+
 </resources>

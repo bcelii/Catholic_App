@@ -1,6 +1,7 @@
 package com.brendan.CCApp_vp4;
 
 
+import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +11,7 @@ import android.view.ContextThemeWrapper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.LinearLayout;
@@ -134,10 +136,32 @@ public class Top3Fragment extends Fragment {
             Log.v("Debug IDs", statusID);
             resID = getResources().getIdentifier(statusID, "id", "com.brendan.CCApp_vp4");
             Spinner statusView = (Spinner) view.findViewById(resID);
-            setSpinnerValue(status,statusView);
+            setSpinnerValue(status, statusView);
 
             //String statusString = "STATUS: " + status;
             //statusView.setText(statusString);
+            String buttonID = "btn_top3_common_friends_" + Integer.toString(i);
+            Log.v("Debug IDs", buttonID);
+            resID = getResources().getIdentifier(buttonID, "id", "com.brendan.CCApp_vp4");
+            Button cfButton = (Button) view.findViewById(resID);
+
+            String contactButtonID = "btn_top3_contact_" + Integer.toString(i);
+            Log.v("Debug IDs", contactButtonID);
+            resID = getResources().getIdentifier(contactButtonID, "id", "com.brendan.CCApp_vp4");
+            Button contactButton = (Button) view.findViewById(resID);
+
+
+
+            String removeButtonID = "btn_remove_event_" + Integer.toString(i);
+            Log.v("Debug IDs", removeButtonID);
+            resID = getResources().getIdentifier(removeButtonID, "id", "com.brendan.CCApp_vp4");
+            Button removeButton = (Button) view.findViewById(resID);
+
+
+            addCFListener(cfButton);
+            addContactButtonListener(contactButton, name);
+            addRemoveEventButtonListener(removeButton);
+
 
             //set the event to visible
             eventLayout.setVisibility(View.VISIBLE);
@@ -145,6 +169,115 @@ public class Top3Fragment extends Fragment {
 
         }
     }
+
+    public void addRemoveEventButtonListener(Button removeButton){
+        removeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                // Create custom dialog object
+                final Dialog dialog = new Dialog(getActivity());
+                // Include dialog.xml file
+                dialog.setContentView(R.layout.dialog_confirm);
+                // Set dialog title
+                //dialog.setTitle("Contact");
+
+                WindowManager.LayoutParams lp = new WindowManager.LayoutParams();
+                lp.copyFrom(dialog.getWindow().getAttributes());
+                lp.width = WindowManager.LayoutParams.MATCH_PARENT;
+                //lp.height = WindowManager.LayoutParams.MATCH_PARENT;
+
+                dialog.show();
+                dialog.getWindow().setAttributes(lp);
+                dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
+
+
+                // set values for custom dialog components - text, image and button
+                TextView text = (TextView) dialog.findViewById(R.id.dialog_confirm_textDialog);
+                String contactString = "Remove Event?";
+                text.setText(contactString);
+                /*ImageView image = (ImageView) dialog.findViewById(R.id.imageDialog);
+                image.setImageResource(R.drawable.cc_logo_transparent);*/
+
+                dialog.show();
+
+                TextView declineButton = (TextView) dialog.findViewById(R.id.dialog_confirm_cancel);
+                // if decline button is clicked, close the custom dialog
+                declineButton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        // Close dialog
+                        dialog.dismiss();
+                    }
+                });
+
+
+            }
+        });
+    }
+
+    public void addCFListener(Button cfButton){
+        cfButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), Common_Friends.class);
+                startActivity(intent);
+            }
+        });
+    }
+
+    public void addContactButtonListener( Button passedContact, final String passedName){
+
+        Button buttonClick = passedContact;
+
+        // add listener to button
+        buttonClick.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View arg0) {
+
+                // Create custom dialog object
+                final Dialog dialog = new Dialog(getActivity());
+                // Include dialog.xml file
+                dialog.setContentView(R.layout.dialog);
+                // Set dialog title
+                //dialog.setTitle("Contact");
+
+                WindowManager.LayoutParams lp = new WindowManager.LayoutParams();
+                lp.copyFrom(dialog.getWindow().getAttributes());
+                lp.width = WindowManager.LayoutParams.MATCH_PARENT;
+                //lp.height = WindowManager.LayoutParams.MATCH_PARENT;
+
+                dialog.show();
+                dialog.getWindow().setAttributes(lp);
+                dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
+
+
+                // set values for custom dialog components - text, image and button
+                TextView text = (TextView) dialog.findViewById(R.id.textDialog);
+                String contactString = "CONTACT:\n" + passedName;
+                text.setText(contactString);
+                /*ImageView image = (ImageView) dialog.findViewById(R.id.imageDialog);
+                image.setImageResource(R.drawable.cc_logo_transparent);*/
+
+                dialog.show();
+
+                TextView declineButton = (TextView) dialog.findViewById(R.id.declineButton);
+                // if decline button is clicked, close the custom dialog
+                declineButton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        // Close dialog
+                        dialog.dismiss();
+                    }
+                });
+
+
+            }
+
+        });
+    }
+
 
     private void setSpinnerValue(String status,Spinner statusView){
         int position;

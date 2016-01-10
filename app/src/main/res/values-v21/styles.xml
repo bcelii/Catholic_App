@@ -42,6 +42,10 @@
 
     </style>
 
+    <style name="AppTheme_Nav.PopupMenu" parent="android:Widget.Holo.Light.ListPopupWindow">
+        <item name="android:popupBackground">@color/primary_darker</item>
+    </style>
+
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="android:windowContentTransitions">true</item>
         <item name="android:windowAllowEnterTransitionOverlap">true</item>

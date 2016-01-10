@@ -67,6 +67,35 @@ public class Friends {
             "Celii, Kieran"
     };
 
+
+
+    public static final String[] commonFriendsList = {
+            "Common_Person_1",
+            "Common_Person_2",
+            "Common_Person_3",
+            "Common_Person_4",
+            "Common_Person_5",
+            "Common_Person_6",
+            "Common_Person_7",
+            "Common_Person_8",
+            "Common_Person_9",
+            "Common_Person_10",
+            "Common_Person_11",
+            "Common_Person_12",
+            "Common_Person_13",
+            "Common_Person_14",
+            "Common_Person_15",
+            "Common_Person_16",
+            "Common_Person_17",
+            "Common_Person_18",
+            "Common_Person_19",
+            "Common_Person_20",
+            "Common_Person_21",
+            "Common_Person_22",
+            "Common_Person_23",
+            "Common_Person_24",
+
+    };
     public static final String[] masterListFriends = {
             "Person_1",
             "Person_2",

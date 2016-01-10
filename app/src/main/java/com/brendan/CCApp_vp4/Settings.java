@@ -9,22 +9,15 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 
-public class MasterList_AddPerson extends Activity {
+public class Settings extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setTheme(R.style.AppTheme_Nav);
-        setContentView(R.layout.activity_master_list__add_person);
-
+        setContentView(R.layout.activity_settings);
         ActionBar actionBar = getActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(true);
-        actionBar.setTitle("Add Person");
-        setSpinners();
-    }
-
-    private void setSpinners(){
-
+        actionBar.setTitle("Settings");
     }
 
 
@@ -41,27 +34,14 @@ public class MasterList_AddPerson extends Activity {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-        Intent intent;
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            intent = new Intent(this,Settings.class);
-            startActivity(intent);
-            return true;
-        }
+
 
         if (id == R.id.quick_home){
-            intent = new Intent(this,MainActivity.class);
+            Intent intent = new Intent(this,MainActivity.class);
             startActivity(intent);
         }
 
-        else if (id == android.R.id.home){
-            intent = new Intent(this,MainActivity.class);
-            int Page = 4;
-            intent.putExtra(MainActivity.REQUEST_FRAG, (int) Page);
-            startActivity(intent);
-        }
 
         return super.onOptionsItemSelected(item);
     }
-
 }

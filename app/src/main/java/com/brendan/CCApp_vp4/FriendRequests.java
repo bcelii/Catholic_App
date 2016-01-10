@@ -2,12 +2,15 @@ package com.brendan.CCApp_vp4;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.app.Dialog;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -24,6 +27,8 @@ public class FriendRequests extends Activity {
         actionBar.setTitle("Friend Requests");
         createYourFR();
     }
+
+
 
     private void createYourFR(){
         String[] friendRequests = Friends.friendRequests;
@@ -51,8 +56,63 @@ public class FriendRequests extends Activity {
             LinearLayout linLayout = (LinearLayout) findViewById(resID);
             linLayout.setVisibility(View.VISIBLE);
 
+            String declineID = "btn_decline_" + Integer.toString(i);
+            resID = getResources().getIdentifier(declineID,"id","com.brendan.CCApp_vp4");
+            Button declineButton = (Button) findViewById(resID);
+
+            addDeclineButtonListener(declineButton, currentRequest);
+
         }
 
+    }
+
+    public void addDeclineButtonListener(final Button declineButton, final String requestName){
+        //get the friend object
+
+
+        declineButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                // Create custom dialog object
+                final Dialog dialog = new Dialog(FriendRequests.this);
+                // Include dialog.xml file
+                dialog.setContentView(R.layout.dialog_confirm);
+                // Set dialog title
+                //dialog.setTitle("Contact");
+
+                WindowManager.LayoutParams lp = new WindowManager.LayoutParams();
+                lp.copyFrom(dialog.getWindow().getAttributes());
+                lp.width = WindowManager.LayoutParams.MATCH_PARENT;
+                //lp.height = WindowManager.LayoutParams.MATCH_PARENT;
+
+                dialog.show();
+                dialog.getWindow().setAttributes(lp);
+                dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
+
+
+                // set values for custom dialog components - text, image and button
+                TextView text = (TextView) dialog.findViewById(R.id.dialog_confirm_textDialog);
+                String contactString = "Decline Friend Request:\n" + requestName;
+                text.setText(contactString);
+                /*ImageView image = (ImageView) dialog.findViewById(R.id.imageDialog);
+                image.setImageResource(R.drawable.cc_logo_transparent);*/
+
+                dialog.show();
+
+                TextView declineButton = (TextView) dialog.findViewById(R.id.dialog_confirm_cancel);
+                // if decline button is clicked, close the custom dialog
+                declineButton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        // Close dialog
+                        dialog.dismiss();
+                    }
+                });
+
+
+            }
+        });
     }
 
     @Override
@@ -68,17 +128,19 @@ public class FriendRequests extends Activity {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-
+        Intent intent;
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            intent = new Intent(this,Settings.class);
+            startActivity(intent);
             return true;
         }
         else if (id == R.id.quick_home){
-            Intent intent = new Intent(this,MainActivity.class);
+            intent = new Intent(this,MainActivity.class);
             startActivity(intent);
         }
         else if (id == android.R.id.home){
-            Intent intent = new Intent(this,MainActivity.class);
+            intent = new Intent(this,MainActivity.class);
             int friendPage = 2;
             intent.putExtra(MainActivity.REQUEST_FRAG, (int) friendPage);
             startActivity(intent);

@@ -2,6 +2,7 @@ package com.brendan.CCApp_vp4;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.app.Dialog;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -9,6 +10,8 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -28,6 +31,64 @@ public class FriendTop3 extends Activity {
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setTitle("Friend Progress");
         generateLayout(friendNo);
+
+        Button removeButton = (Button) findViewById(R.id.friend_event_remove_friend);
+        addRemoveEventButtonListener(removeButton, friendNo);
+
+    }
+
+    public void addRemoveEventButtonListener(Button removeButton, int friendNo){
+        //get the friend object
+        Friends[] friendList = Friends.friendsList;
+        Friends friend = friendList[friendNo];
+
+        //set the title of the page
+        TextView title = (TextView) findViewById(R.id.friend_top_3_title);
+        final String friendName = friend.getFriendName();
+
+        removeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                // Create custom dialog object
+                final Dialog dialog = new Dialog(FriendTop3.this);
+                // Include dialog.xml file
+                dialog.setContentView(R.layout.dialog_confirm);
+                // Set dialog title
+                //dialog.setTitle("Contact");
+
+                WindowManager.LayoutParams lp = new WindowManager.LayoutParams();
+                lp.copyFrom(dialog.getWindow().getAttributes());
+                lp.width = WindowManager.LayoutParams.MATCH_PARENT;
+                //lp.height = WindowManager.LayoutParams.MATCH_PARENT;
+
+                dialog.show();
+                dialog.getWindow().setAttributes(lp);
+                dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
+
+
+                // set values for custom dialog components - text, image and button
+                TextView text = (TextView) dialog.findViewById(R.id.dialog_confirm_textDialog);
+                String contactString = "Remove Friend:\n" + friendName;
+                text.setText(contactString);
+                /*ImageView image = (ImageView) dialog.findViewById(R.id.imageDialog);
+                image.setImageResource(R.drawable.cc_logo_transparent);*/
+
+                dialog.show();
+
+                TextView declineButton = (TextView) dialog.findViewById(R.id.dialog_confirm_cancel);
+                // if decline button is clicked, close the custom dialog
+                declineButton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        // Close dialog
+                        dialog.dismiss();
+                    }
+                });
+
+
+            }
+        });
     }
 
     private void generateLayout(int friendNo){
@@ -37,7 +98,8 @@ public class FriendTop3 extends Activity {
 
         //set the title of the page
         TextView title = (TextView) findViewById(R.id.friend_top_3_title);
-        title.setText(friend.getFriendName());
+        String friendName = friend.getFriendName();
+        title.setText(friendName);
 
         //get the event list
         YourEvents[] myEvents = friend.getEventsList();
@@ -144,17 +206,19 @@ public class FriendTop3 extends Activity {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-
+        Intent intent;
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            intent = new Intent(this,Settings.class);
+            startActivity(intent);
             return true;
         }
         if (id == R.id.quick_home){
-            Intent intent = new Intent(this,MainActivity.class);
+            intent = new Intent(this,MainActivity.class);
             startActivity(intent);
         }
         if (id == android.R.id.home){
-            Intent intent = new Intent(this,MainActivity.class);
+            intent = new Intent(this,MainActivity.class);
             int friendPage = 2;
             intent.putExtra(MainActivity.REQUEST_FRAG, (int) friendPage);
             startActivity(intent);

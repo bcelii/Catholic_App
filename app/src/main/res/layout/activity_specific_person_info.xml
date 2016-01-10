@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:fitsSystemWindows="true"
+tools:context="com.brendan.CCApp_vp4.SpecificPersonInfo">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_extra_small_height"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
+            <Button
+                android:id="@+id/specific_person_info_but_contact"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.40"
+                android:paddingLeft="@dimen/but_left_padding"
+                android:paddingRight="@dimen/but_right_padding"
+                android:paddingTop="@dimen/but_top_padding"
+                android:paddingBottom="@dimen/but_bottom_padding"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="@dimen/btn_LR_margin"
+                android:layout_marginLeft="@dimen/btn_LR_margin"
+                android:background="@color/but_blue_dark"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:text="CONTACT"/>
+
+
+            <Button
+                android:id="@+id/specific_person_info_but_common_friends"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.40"
+                android:paddingLeft="@dimen/but_left_padding"
+                android:paddingRight="@dimen/but_right_padding"
+                android:paddingTop="@dimen/but_top_padding"
+                android:paddingBottom="@dimen/but_bottom_padding"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="@dimen/btn_LR_margin"
+                android:layout_marginLeft="@dimen/btn_LR_margin"
+                android:background="@color/but_blue_dark"
+                android:gravity="center"
+
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:text="SEE COMMON FRIENDS"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name: "
+                android:textStyle="bold"
+                android:textSize="@dimen/new_event_text_size"/>
+
+            <TextView
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:id="@+id/specific_person_info_name"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/new_event_text_size"
+                android:layout_weight="1"
+                android:text=""
+                android:textColorHint="@color/iron"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Year: "
+                android:textStyle="bold"
+                android:textSize="@dimen/new_event_text_size"/>
+
+            <TextView
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:id="@+id/specific_person_info_year"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/new_event_text_size"
+                android:layout_weight="1"
+                android:text=""
+                android:textColorHint="@color/iron"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone: "
+                android:textStyle="bold"
+                android:textSize="@dimen/new_event_text_size"/>
+
+            <TextView
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:id="@+id/specific_person_info_phone"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/new_event_text_size"
+                android:layout_weight="1"
+                android:text=""
+                android:textColorHint="@color/iron"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email: "
+                android:textStyle="bold"
+                android:textSize="@dimen/new_event_text_size"/>
+
+            <TextView
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:id="@+id/specific_person_info_email"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/new_event_text_size"
+                android:layout_weight="1"
+                android:text=""
+                android:textColorHint="@color/iron"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </LinearLayout>
+
+
+        <!-- Signup Button -->
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_delete_person"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:background="@color/but_red_dark"
+            android:text="Delete Person"/>
+
+
+
+    </LinearLayout>
+</ScrollView>
+

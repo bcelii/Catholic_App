@@ -26,6 +26,10 @@ public class LoginActivity extends AppCompatActivity {
     
     @Override
     public void onCreate(Bundle savedInstanceState) {
+        Parse.enableLocalDatastore(this);
+
+        Parse.initialize(this);
+
         super.onCreate(savedInstanceState);
         setContentView(com.brendan.CCApp_vp4.R.layout.activity_login);
         ButterKnife.bind(this);

@@ -126,19 +126,21 @@ public class CDayDetails extends Activity {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-
+        Intent intent;
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            intent = new Intent(this,Settings.class);
+            startActivity(intent);
             return true;
         }
 
         if (id == R.id.quick_home){
-            Intent intent = new Intent(this,MainActivity.class);
+            intent = new Intent(this,MainActivity.class);
             startActivity(intent);
         }
 
         else if (id == android.R.id.home){
-            Intent intent = new Intent(this,MainActivity.class);
+            intent = new Intent(this,MainActivity.class);
             int Page = 3;
             intent.putExtra(MainActivity.REQUEST_FRAG, (int) Page);
             startActivity(intent);

@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+    <!--android:background="@android:color/transparent"-->
+
+
+    <!--<ImageView
+        android:id="@+id/imageDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="6dp" />-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/popup_window_LR_margin"
+        android:layout_marginLeft="@dimen/popup_window_LR_margin"
+        android:background="@drawable/dialog_background"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/textDialog"
+            android:text="CONTACT"
+            android:layout_width="fill_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/popup_title_size"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+
+            />
+        <Button
+            android:layout_marginLeft="@dimen/popup_button_LR_margin"
+            android:layout_marginRight="@dimen/popup_button_LR_margin"
+            android:id="@+id/contact_dialog_textButton"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/popup_button_height"
+            android:text=" Text "
+            android:gravity="center"
+            android:background="@color/but_green_dark"
+            android:textColor="@color/white"
+            android:layout_marginBottom="@dimen/popup_window_bottom_margin"
+            android:layout_marginTop="20dp"
+            />
+        <!--android:layout_marginTop="5dp"-->
+
+        <Button
+            android:layout_marginLeft="@dimen/popup_button_LR_margin"
+            android:layout_marginRight="@dimen/popup_button_LR_margin"
+            android:id="@+id/contact_dialog_callButton"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/popup_button_height"
+            android:gravity="center"
+            android:text=" Call "
+            android:background="@color/but_green_dark"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="@dimen/popup_window_bottom_margin"
+
+            />
+
+        <Button
+            android:layout_marginLeft="@dimen/popup_button_LR_margin"
+            android:layout_marginRight="@dimen/popup_button_LR_margin"
+            android:id="@+id/contact_dialog_emailButton"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/popup_button_height"
+            android:gravity="center"
+            android:text=" Email "
+            android:background="@color/but_green_dark"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="@dimen/popup_window_bottom_margin"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/but_red_dark"
+            android:text="Cancel"
+            android:layout_gravity="right"
+            android:clickable="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/declineButton"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

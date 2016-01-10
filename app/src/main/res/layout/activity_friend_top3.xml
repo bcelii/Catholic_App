@@ -251,5 +251,23 @@
 
             </RelativeLayout>
         </RelativeLayout>
+        <Button
+            android:id="@+id/friend_event_remove_friend"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/but_small_height"
+            android:paddingLeft="@dimen/but_left_padding"
+            android:paddingRight="@dimen/but_right_padding"
+            android:paddingTop="@dimen/but_top_padding"
+            android:paddingBottom="@dimen/but_bottom_padding"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="24dp"
+            android:layout_marginLeft="@dimen/button_LR_margin"
+            android:layout_marginRight="@dimen/button_LR_margin"
+            android:background="@color/but_red_dark"
+            android:gravity="center"
+
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:text="DELETE FRIEND"/>
     </LinearLayout>
 </ScrollView>

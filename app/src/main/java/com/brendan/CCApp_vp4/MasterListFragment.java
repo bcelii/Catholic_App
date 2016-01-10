@@ -1,6 +1,7 @@
 package com.brendan.CCApp_vp4;
 
 
+import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,9 +11,12 @@ import android.view.ContextThemeWrapper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.TextView;
 
 
 /**
@@ -46,7 +50,7 @@ public class MasterListFragment extends Fragment {
         String[] masterList = Friends.masterListFriends;
         int arrLength = masterList.length;
 
-        ListView lv = (ListView) view.findViewById(R.id.new_friend_listView);
+        final ListView lv = (ListView) view.findViewById(R.id.new_friend_listView);
 
         // This is the array adapter, it takes the context of the activity as a
         // first parameter, the type of list view as a second parameter and your
@@ -57,6 +61,20 @@ public class MasterListFragment extends Fragment {
                 masterList );
 
         lv.setAdapter(arrayAdapter);
+
+        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> arg0, View arg1, int position, long arg3) {
+                String passedName = (String) lv.getItemAtPosition(position);
+                //set intent with the name
+                Intent intent = new Intent(getActivity(),SpecificPersonInfo.class);
+                intent.setType("text/plain");
+                intent.putExtra("name",passedName);
+                startActivity(intent);
+
+            }
+        });
 
     }
 

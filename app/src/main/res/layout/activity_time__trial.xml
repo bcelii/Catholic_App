@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="vertical"
+tools:context="com.brendan.CCApp_vp4.Time_Trial" >
+
+<Button
+    android:id="@+id/button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/button_label" />
+
+<TextView
+    android:id="@+id/time_label"
+    android:clickable="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/time_txt"
+    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+<TextView
+    android:id="@+id/txtTime"
+    android:clickable="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+<TimePicker
+    android:id="@+id/timePicker"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+</LinearLayout>

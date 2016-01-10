@@ -3,21 +3,34 @@
     package="com.brendan.CCApp_vp4" >
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+
+        <meta-data
+            android:name="com.parse.APPLICATION_ID"
+            android:value="RsM0TvktmnyoKjjkPacaaPB6HuMyweJWS73iMZLj" />
+        <meta-data
+            android:name="com.parse.CLIENT_KEY"
+            android:value="C3dfEbfaJOC8CV3HFVM5iI6O4FKZchKHgHbqT5N4" />
+
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme_Nav" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".LoginActivity"
             android:theme="@style/AppTheme.Dark" >
-
         </activity>
         <activity
             android:name=".SignupActivity"
@@ -65,11 +78,27 @@
         <activity
             android:name=".Date_Trial"
             android:label="@string/title_activity_date__trial" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        </activity>
+        <activity
+            android:name=".Time_Trial"
+            android:label="@string/title_activity_time__trial" >
+        </activity>
+        <activity
+            android:name=".Common_Friends"
+            android:label="@string/title_activity_common__friends" >
+        </activity>
+        <activity
+            android:name=".Popup_Trial"
+            android:label="@string/title_activity_popup__trial" >
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SpecificPersonInfo"
+            android:label="@string/title_activity_specific_person_info" >
+        </activity>
+        <activity
+            android:name=".Settings"
+            android:label="@string/title_activity_settings" >
         </activity>
     </application>
 

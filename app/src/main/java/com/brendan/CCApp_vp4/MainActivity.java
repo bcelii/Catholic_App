@@ -205,17 +205,20 @@ public class MainActivity extends Activity {
         if (drawerToggle.onOptionsItemSelected(item)) {
             return true;
         }
+        Intent intent;
         switch (item.getItemId()) {
             case com.brendan.CCApp_vp4.R.id.quick_home:
                 //Will go to the top level fragment
 
-                Intent intent = new Intent(this,MainActivity.class);
+                intent = new Intent(this,MainActivity.class);
                 startActivity(intent);
 
 
                 return true;
             case com.brendan.CCApp_vp4.R.id.action_settings:
                 //Code to run when the settings item is clicked
+                intent = new Intent(this,Settings.class);
+                startActivity(intent);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

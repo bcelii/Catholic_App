@@ -11,33 +11,18 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="56dp"
+        android:paddingTop="5dp"
         android:paddingLeft="24dp"
         android:paddingRight="24dp">
-        <LinearLayout
-            android:layout_width="fill_parent"
+
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/new_event_name_header"
-                android:text="Name: "
-                />
-            <Spinner
-                android:backgroundTint="@color/spinner_tint"
-                android:popupBackground="@color/spinner_tint"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/new_event_name"
-                android:entries="@array/responseOptions">
-
-            </Spinner>
-
-        </LinearLayout>
+            android:text="Event Information:"
+            android:textStyle="bold"
+            android:layout_marginTop="0dp"
+            android:textColor="@color/primary_darker"
+            android:textSize="@dimen/new_event_title_size"/>
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -47,20 +32,31 @@
             android:layout_marginBottom="8dp"
             >
 
-            <TextView
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/new_event_eventName_header"
-                android:text="Event: "
-                />
-            <Spinner
-                android:backgroundTint="@color/spinner_tint"
-                android:popupBackground="@color/spinner_tint"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/new_event_eventName">
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/new_event_eventName_header"
+                    android:text="Event: "
+                    android:textStyle="bold"
+                    android:textSize="@dimen/new_event_text_size"
+                    />
 
-            </Spinner>
+                <Spinner
+                    android:backgroundTint="@color/spinner_tint"
+                    android:popupBackground="@color/spinner_tint"
+                    android:scrollbarSize="@dimen/new_event_scroll_text_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/new_event_eventName">
+
+                </Spinner>
+
+            </LinearLayout>
+
 
         </LinearLayout>
 
@@ -70,18 +66,22 @@
             android:orientation="vertical"
             android:layout_marginTop="2dp"
             android:layout_marginBottom="8dp"
+            android:layout_marginLeft="30dp"
             android:visibility="visible">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/new_event_optional_eventName_header"
-                android:text="Event Name: "
+                android:text="Other Event Name: "
+                android:textSize="@dimen/new_event_text_size_small"
+                android:textStyle="bold"
                 />
             <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
                 android:id="@+id/new_event_optional_eventName"
+                android:textSize="@dimen/new_event_text_size_small"
 
                 >
 
@@ -89,88 +89,204 @@
 
         </LinearLayout>
 
-        <!-- Phone Label -->
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp">
-            <EditText android:id="@+id/input_name"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="phone"
-                android:hint="Phone Number" />
-        </android.support.design.widget.TextInputLayout>
-
-        <!--  Email Label -->
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp">
-            <EditText android:id="@+id/input_email"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textEmailAddress"
-                android:hint="Email" />
-        </android.support.design.widget.TextInputLayout>
-
+            android:text="Person Information:"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/primary_darker"
+            android:textSize="@dimen/new_event_title_size"/>
 
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp">
+            android:layout_marginBottom="3dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/new_event_date_header"
-                android:text="Date: "
-                android:layout_weight="1"
+                android:id="@+id/new_event_name_header"
+                android:text="Name: "
+                android:textStyle="bold"
+                android:textSize="@dimen/new_event_text_size"
                 />
-            <TextView
+
+            <Spinner
+                android:backgroundTint="@color/spinner_tint"
+                android:popupBackground="@color/spinner_tint"
+                android:scrollbarSize="@dimen/new_event_scroll_text_size"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/new_event_time_header"
-                android:text="Time: "
-                android:layout_weight="1"
-                />
+                android:id="@+id/new_event_name"
+                android:entries="@array/responseOptions"
+                >
+            </Spinner>
+
 
 
         </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Person"
+            android:textSize="12dp"
+            android:layout_weight="0"
+            android:textColor="@color/but_red_dark"
+            android:layout_gravity="right"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Phone Label -->
+        <!--<android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="2dp">
+            <EditText android:id="@+id/input_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/new_event_text_size"
+                android:inputType="phone"
+                android:textSize="@dimen/new_event_text_size_small"
+                android:hint="Phone Number"
+                android:digits="0123456789+" />
+        </android.support.design.widget.TextInputLayout>-->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone: "
+                android:textStyle="bold"
+                android:textSize="@dimen/new_event_text_size"/>
+
+            <EditText
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:id="@+id/input_name"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/new_event_text_size"
+                android:layout_weight="1"
+                android:textColorHint="@color/iron"
+                android:hint="999-999-9999"
+                android:inputType="phone"
+                android:digits="0123456789+"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </LinearLayout>
+
+        <!--  Email Label -->
+        <!--<android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="8dp">
+            <EditText android:id="@+id/input_email"
+                android:layout_width="match_parent"
+                android:layout_height="new_event_text_size_dp"
+                android:inputType="textEmailAddress"
+                android:textSize="@dimen/new_event_text_size_small"
+                android:hint="Email" />
+        </android.support.design.widget.TextInputLayout>-->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email: "
+                android:textStyle="bold"
+                android:textSize="@dimen/new_event_text_size"/>
+
+            <EditText
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:id="@+id/input_email"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/new_event_text_size"
+                android:layout_weight="1"
+                android:textColorHint="@color/iron"
+                android:hint="example@smu.edu"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </LinearLayout>
+
+
+       <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:weightSum="1"
+            >-->
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-
-            <EditText
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/new_event_date"
-                android:inputType="date"
-                android:layout_weight="1"
-                />
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/new_event_time"
-                android:inputType="time"
-                android:layout_weight="1"
-                />
+                android:text="Date: "
+                android:textStyle="bold"
+                android:textSize="@dimen/new_event_text_size"/>
 
+            <EditText
+                android:id="@+id/etxt_fromdate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/iron"
+                android:hint="@string/from_date"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/etxt_todate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:hint="@string/to_date"
+                android:visibility="gone"/>
         </LinearLayout>
-        <TextView
+
+        <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="New Date thing"/>
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time: "
+                android:textStyle="bold"
+                android:textSize="@dimen/new_event_text_size"/>
 
-        <EditText
-            android:id="@+id/etxt_fromdate"
-            android:layout_width="0dp"
+            <TextView
+                android:id="@+id/txtTime"
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/new_event_text_size"
+                android:layout_weight="1"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </LinearLayout>
+
+
+
+
+        <!--<TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="@string/from_date" />
+            android:visibility="gone"/>-->
 
 
         <!-- Signup Button -->
